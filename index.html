@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cimevet - Clínica Veterinaria 24h</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="./assets/cimevet-logo.jpeg" alt="Cimevet Logo" class="logo-img" style="width: 200px; height: auto;">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn-contacto">Agendar Cita</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Clínica Veterinaria <span class="highlight">CIMEVET</span></h1>
+                <p>Atención veterinaria de calidad 24 horas al día, 7 días a la semana</p>
+                <button class="btn-primary">Agendar Cita Ahora</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images.jpg" alt="Clínica Veterinaria Cimevet">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS SECTION -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <p class="section-subtitle">Ofrecemos atención veterinaria integral para tu mascota</p>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="bi bi-paw"></i></div>
+                    <h3>Consulta General</h3>
+                    <p>Evaluación completa de la salud de tu mascota</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="bi bi-syringe"></i></div>
+                    <h3>Vacunación</h3>
+                    <p>Esquema de vacunación completo y actualizado</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="bi bi-hospital"></i></div>
+                    <h3>Cirugía</h3>
+                    <p>Procedimientos quirúrgicos con tecnología moderna</p>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="bi bi-tooth"></i></div>
+                    <h3>Odontología</h3>
+                    <p>Limpieza y tratamiento dental especializado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO SECTION -->
+    <section id="equipo" class="equipo">
+        <div class="container">
+            <h2>Conoce Nuestro Equipo</h2>
+            <p class="section-subtitle">Los profesionales detrás del cuidado de tu mascota</p>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn">❮</button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="team-card">
+                            <img src="./assets/descarga.jpg" alt="Dr. Juan García">
+                            <h3>Dr. Juan García</h3>
+                            <p class="role">Veterinario General</p>
+                            <p class="bio">Especialista en medicina interna con 10 años de experiencia</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="./assets/descarga.jpg" alt="Dra. María López">
+                            <h3>Dra. María López</h3>
+                            <p class="role">Cirujana Veterinaria</p>
+                            <p class="bio">Experta en procedimientos quirúrgicos avanzados</p>
+                        </div>
+                        <div class="team-card">
+                            <img src="./assets/descarga.jpg" alt="Dr. Carlos Rodríguez">
+                            <h3>Dr. Carlos Rodríguez</h3>
+                            <p class="role">Odontólogo Veterinario</p>
+                            <p class="bio">Especialista en cuidado dental y salud bucal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn carousel-btn-next" id="nextBtn">❯</button>
+            </div>
+
+            <!-- Indicadores del carrusel -->
+            <div class="carousel-indicators" id="carouselIndicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS SECTION -->
+    <section id="testimonios" class="testimonios">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p class="section-subtitle">Experiencias reales de dueños satisfechos</p>
+            <div class="testimonios-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"El equipo de Cimevet es excelente. Mi mascota fue atendida con mucho cuidado y profesionalismo. Totalmente recomendado."</p>
+                    <div class="testimonial-author">
+                        <img src="./assets/descarga.jpg" alt="Cliente">
+                        <div>
+                            <h4>Roberto García</h4>
+                            <span class="date">15 Mar 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Excelente atención 24 horas. Llegué de emergencia con mi perro y fueron muy atentos y profesionales. Muchas gracias."</p>
+                    <div class="testimonial-author">
+                        <img src="./assets/descarga.jpg" alt="Cliente">
+                        <div>
+                            <h4>Laura Martínez</h4>
+                            <span class="date">20 Feb 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Mi gato fue operado aquí y el seguimiento post-operatorio fue excepcional. Se nota que les importa realmente el bienestar de los animales."</p>
+                    <div class="testimonial-author">
+                        <img src="./assets/descarga.jpg" alt="Cliente">
+                        <div>
+                            <h4>David Fernández</h4>
+                            <span class="date">12 Jan 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO/UBICACIÓN SECTION -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h2>Contáctanos</h2>
+                <p class="section-subtitle">Ubicados en el corazón de la ciudad</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av Universitaria 7381 Comas - Urb. El Retablo 2da Etapa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon"><i class="bi bi-telephone-fill"></i></span>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+51 987 809 574</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon"><i class="bi bi-clock-fill"></i></span>
+                        <div>
+                            <h4>Horario General</h4>
+                            <p>Lunes a Sabado: 9 am - 8 pm</p>
+                            <p>Domingo: 9 am - 3 pm</p>
+                            <p>Emergencias las 24 horas los 7 días de la semana</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="contact-text">¡Tu mascota merece el mejor cuidado! Visítanos en cualquier momento, estamos aquí para ayudarte.</p>
+                
+                <button class="btn-primary">Agendar Cita</button>
+            </div>
+            
+            <div class="contacto-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8449068145405!2d-3.7038340!3d40.4168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCimevet%20Cl%C3%ADnica%20Veterinaria!5e0!3m2!1ses!2ses!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/cimevet-sin-fondo.png" alt="Cimevet Logo" class="footer-logo-img">
+            </div>
+            <p>Copyright © 2025 Cimevet. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Clinica.cimevet" class="social-icon" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/cimevet.pe/" class="social-icon" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@cimevet" class="social-icon" target="_blank">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
