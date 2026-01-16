@@ -237,9 +237,9 @@ body {
 
 .servicios-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 30px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -271,6 +271,13 @@ body {
     font-size: 3.5rem !important;
     color: #5b3fa0 !important;
     line-height: 1;
+}
+
+.servicio-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(24%) sepia(67%) saturate(1369%) hue-rotate(245deg);
 }
 
 .servicio-card h3 {
