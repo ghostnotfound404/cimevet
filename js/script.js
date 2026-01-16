@@ -145,7 +145,7 @@ function initCarousel() {
 // Función para agendar cita
 function agendarCita() {
     const telefono = '+51987809574';
-    const mensaje = 'Hola Cimevet, me gustaría agendar una cita para mi mascota.';
+    const mensaje = 'Hola Veterinaria Cimevet, me gustaría agendar una cita para mi mascota.';
     const whatsappUrl = `https://wa.me/${telefono.replace(/\D/g, '')}?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
 }
