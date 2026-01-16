@@ -319,7 +319,7 @@ body {
 }
 
 .team-card {
-    flex: 0 0 100%;
+    flex: 0 0 calc(50% - 20px);
     text-align: center;
     background: white;
     border-radius: 15px;
@@ -675,6 +675,10 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .team-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
     .team-card img {
         height: 250px;
     }
@@ -683,6 +687,10 @@ body {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
+    }
+
+    .carousel-track {
+        gap: 20px;
     }
 
     .carousel-container {
@@ -733,6 +741,14 @@ body {
         width: 35px;
         height: 35px;
         font-size: 1rem;
+    }
+
+    .carousel-track {
+        gap: 0;
+    }
+
+    .team-card {
+        flex: 0 0 100%;
     }
 
     .team-card img {
